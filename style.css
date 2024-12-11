@@ -162,6 +162,9 @@ ________________________
 
 .item1{
     background-color: rgb(255, 190, 225);
+    position: sticky;
+    top : 50px;
+    left: 50px;
 }
 
 .item2{
@@ -190,12 +193,37 @@ ________________________
     margin: 10px;
     font-size: 25px;
 }
+.box__percent {
+    width: 50%;
+    }
+.box__pixels {
+    width: 200px;
+    }
+    .box__vw {
+        width: 50vw;
+        }
+        .box__vh {
+        height: 20vh;
+        }
 
-
+        .font__1em {
+            font-size: 2em;
+            }
+            .font__1rem {
+            font-size: 1rem;
+            }
+            .font__100percent {
+            font-size: 100%;
+            }
 /*
 ________________________
 Flex
-________________________
+.f{
+flex-direction : column-reverse ;
+flex-wrap : wrap-reverse ;
+justify-content : center;
+align-content : space-between ; 
+}
 */
 .flex__container {
     display: flex;
@@ -215,8 +243,16 @@ ________________________
     background-color: var(--primary-100);
 }
 /* Extra small devices (phones, 600px and down) */
-
-
+@media screen and (max-width: 600px ){
+    .media__container{
+        background-color: var(--primary-100);
+    }
+}
+@media screen and (max-width: 1200px ){
+    .media__container{
+        background-color: var(--primary-800);
+    }
+}
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 
